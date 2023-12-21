@@ -11,7 +11,7 @@ public class Booking {
 
 	public boolean booking(String userName,String userEmail,String userPassword,String userLocation) throws SQLException, ParseException {
 		Connection con = JDBC_connection.getConnection();
-        Statement st = con.createStatement();
+        	Statement st = con.createStatement();
 		String query1 = "SELECT * FROM flight_Details";
 		ResultSet rs = st.executeQuery(query1);
         // Get ResultSet metadata to retrieve column names
