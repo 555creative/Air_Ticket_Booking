@@ -183,7 +183,7 @@ public class OTP {
 			    message.setContent(htmlContent, "text/html");
 			    Transport.send(message);
 			    System.out.println(content);
-			    
+			    return true;
 			}else{
 				System.out.println("OTP SENDING FAILED...!");
 			}
